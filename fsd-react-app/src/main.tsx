@@ -5,7 +5,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Hello R2D2!</div>
+    element: <div>Hello from R2D2!</div>
   }
 ]);
 
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);
