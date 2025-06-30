@@ -4,7 +4,7 @@ import { accessTokenInterceptor } from './interceptors';
 
 export const alovaInstance = createAlova({
   baseURL: 'https://jsonplaceholder.typicode.com',
-  statesHook: { / специфично для твоего стейт-менеджера, если нужно / },
+  //statesHook: {},
   requestAdapter: adapterFetch(),
   beforeRequest(method: Method) {
     accessTokenInterceptor(method); // подключаем interceptor

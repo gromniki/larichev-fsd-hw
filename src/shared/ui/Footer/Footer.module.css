@@ -1,0 +1,6 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #f5f5f5;
+}
